@@ -1,0 +1,235 @@
+:root {
+    --font1: "Young Serif", serif;
+    --font2: "Outfit", sans-serif;
+
+    --Nutmeg: hsl(14, 45%, 36%);
+    --DarkRaspberry: hsl(332, 51%, 32%);
+
+    --RoseWhite: hsl(330, 100%, 98%);
+    --White: hsl(0, 0%, 100%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --LightGrey: hsl(30, 18%, 87%);
+    --WengeBrown: hsl(30, 10%, 34%);
+    --DarkCharcoal: hsl(24, 5%, 18%);
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    font-family: var(--font2);
+    background-color: var(--Eggshell);
+    color: var(--DarkCharcoal);
+}
+
+h1 {
+    font-size: 3.8rem;
+    
+}
+
+h2 {
+    font-size: 3.2rem;
+    color: var(--Nutmeg);
+}
+
+h1,h2 {
+    font-family: var(--font1);
+    
+}
+
+p {
+    line-height: 1.5;
+    font-size: 1.6rem;
+}
+
+section {
+    margin: 1rem ;
+   
+}
+
+span {
+    font-weight: 700;
+}
+
+ul,ol {
+    list-style-position: outside;
+}
+
+li {
+    font-size: 1.6rem;
+    line-height: 2.2;
+}
+
+ li::marker{
+    color: var(--DarkRaspberry);
+ }
+
+.main {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    background-color: var(--RoseWhite);
+}
+
+@media (min-width: 768px) { 
+    .main {
+        padding: 2rem;
+        margin-top: 2rem;
+        border-radius: 1rem;
+    }
+}
+
+.main__title {
+    margin: 2rem;
+    font-weight: 400;
+}
+
+@media (min-width: 768px) { 
+    .main__title {
+        margin: 2rem 0;
+    }
+}
+
+.main__description {
+    margin: 2rem;
+}
+
+@media (min-width: 768px) { 
+    .main__description {
+        margin: 1rem 0;
+    }
+}
+
+.time {
+    background-color: var(--Eggshell);
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+@media (min-width: 768px) { 
+    .time {
+        margin: 2rem 0;
+    }
+}
+
+.time__title {
+    margin: 0 0 2rem 0;
+    font-family: var(--font2);
+    font-weight: 400;
+    color: var(--DarkRaspberry);
+    
+}
+
+.time__list {
+    padding-left: 2rem;
+}
+
+.time__item {
+    padding-left: 2rem;
+}
+
+.ingredients {
+    margin: 2rem;
+    border-bottom: 1px solid var(--LightGrey);
+}
+
+@media (min-width: 768px) { 
+    .ingredients {
+        margin: 2rem 0;
+    }
+}
+
+.ingredients__title {
+    margin: 0;
+    font-weight: 400;
+}
+
+.ingredients__list {
+    padding-left: 2rem;
+}
+
+.ingredients__item {
+    padding-left: 2rem;
+}
+
+.instructions {
+    margin: 2rem;
+    border-bottom: 1px solid var(--LightGrey);
+}
+
+@media (min-width: 768px) { 
+    .instructions {
+        margin: 0;
+    }
+}
+
+.instructions__title {
+    font-weight: 400;
+}
+
+.instructions__list {
+    padding-left: 2rem;
+    
+}
+
+.instructions__item {
+    padding-left: 2rem;
+}
+
+.instructions__item::marker {
+    font-weight: 700;
+}
+
+.nutrition {
+    margin: 2rem;
+}
+
+@media (min-width: 768px) { 
+    .nutrition {
+        margin: 0;
+    }
+}
+
+.nutrition__title {
+    font-weight: 400;
+}
+
+.nutrition__container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.nutrition__container-column {
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--LightGrey);
+}
+
+.nutrition__container-column:last-of-type {
+    border-bottom: none;
+}
+
+.nutrition__text-table {
+    padding: 0 2rem;
+    flex: 1;
+}
+
+.valor {
+    color: var(--Nutmeg);
+    font-weight: 700;
+}
